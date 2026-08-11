@@ -16,11 +16,6 @@
     ACTION=="add|change", KERNEL=="sd[a-z]",          ATTR{queue/scheduler}="mq-deadline"
    '';
  
-    services.ananicy-cpp = {
-      enable = true;
-      package = pkgs.ananicy-cpp;
-    };
-
   # ── Gamemode ──────────────────────────────────────────────────────────────────
   programs.gamemode.enable = true;
 
