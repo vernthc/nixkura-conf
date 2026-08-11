@@ -1,0 +1,49 @@
+{ ... }:
+{
+  programs.kitty.extraConfig = ''
+# ┏┏ ┏━┃━┏┛┏━┛┏━┃┛┏━┃┃    ┃ ┃┏━┃┃ ┃  ┃ ┃┃ ┃┏━┃┏━┃┃  ┏━┃┏━ ┏━
+# ┃┃┃┏━┃ ┃ ┏━┛┏┏┛┃┏━┃┃  ━┛━┏┛┃ ┃┃ ┃  ┏━┃━┏┛┏━┛┏┏┛┃  ┏━┃┃ ┃┃ ┃
+# ┛┛┛┛ ┛ ┛ ━━┛┛ ┛┛┛ ┛━━┛   ┛ ━━┛━━┛  ┛ ┛ ┛ ┛  ┛ ┛━━┛┛ ┛┛ ┛━━
+
+include colors.conf
+
+font_family       JetBrainsMono Nerd Font Mono
+font_size         15
+
+disable_ligatures no
+enable_audio_bell no
+
+shell zsh
+# shell_integration disabled
+
+cursor_shape block
+
+url_color #e8eaed
+url_style curly
+remember_window_size  no
+# initial_window_width  640
+# initial_window_height 400
+initial_window_width  78c
+initial_window_height 23c
+window_padding_width  30
+cursor_blink_interval 0.5
+cursor_trail 3
+
+background_opacity 0.80
+scrollbar_handle_opacity 0
+scrollbar_track_opacity 0
+scrollbar_track_hover_opacity 0
+confirm_os_window_close 0
+
+# -- Performance settings
+sync_to_monitor no
+
+# -- Speed shit up
+allow_remote_control yes
+listen_on unix:/tmp/kitty
+
+# -- Perf
+repaint_delay     8
+input_delay       3
+'';
+}
