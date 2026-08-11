@@ -14,13 +14,12 @@
   services.udev.extraRules = ''
     ACTION=="add|change", KERNEL=="nvme[0-9]n[0-9]", ATTR{queue/scheduler}="none"
     ACTION=="add|change", KERNEL=="sd[a-z]",          ATTR{queue/scheduler}="mq-deadline"
-  
+   '';
+ 
     services.ananicy = {
       enable = true;
       package = pkgs.ananicy-cpp;
     };
-
-  '';
 
   # ── Gamemode ──────────────────────────────────────────────────────────────────
   programs.gamemode.enable = true;

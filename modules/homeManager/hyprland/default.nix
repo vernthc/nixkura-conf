@@ -8,7 +8,6 @@
     ./input.nix
     ./layout.nix
     ./misc.nix
-    ./monitors.nix
     ./windowrules.nix
   ];
 }
