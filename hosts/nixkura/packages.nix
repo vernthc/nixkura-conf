@@ -35,7 +35,6 @@
     grim
 
     # flake packages
-    inputs.HyprQuickFrame.packages.${pkgs.system}.default
     inputs.claude-desktop-flake.packages.${pkgs.system}.claude-desktop
 
    ];

@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "HyprQuickFrame": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1780319201,
-        "narHash": "sha256-Xkg1tj1XLEnURikdmfpH9jBOTC5/g6bksvbTRJbZmoE=",
-        "owner": "Ronin-CK",
-        "repo": "HyprQuickFrame",
-        "rev": "57f0629b4af9740c704e5f315f9aafe487952095",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Ronin-CK",
-        "repo": "HyprQuickFrame",
-        "type": "github"
-      }
-    },
     "cachyos-nix": {
       "inputs": {
         "flake-schemas": "flake-schemas",
@@ -149,7 +129,6 @@
     },
     "root": {
       "inputs": {
-        "HyprQuickFrame": "HyprQuickFrame",
         "cachyos-nix": "cachyos-nix",
         "claude-desktop-flake": "claude-desktop-flake",
         "home-manager": "home-manager_2",
