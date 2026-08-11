@@ -36,7 +36,6 @@
 
     # flake packages
     inputs.claude-desktop-flake.packages.${pkgs.system}.claude-desktop
-
    ];
 
   fonts.packages = with pkgs; [
