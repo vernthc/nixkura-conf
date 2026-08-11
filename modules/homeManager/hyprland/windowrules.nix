@@ -118,7 +118,7 @@ hl.window_rule({
 
 hl.window_rule({ match = {class = "codium"}, opacity = "1 override"})
 hl.window_rule({ match = {initial_title = "Minecraft* 1.21.11"}, stay_focused = true})
-hl.window_rule({ match = {class = "org.gnome.Loupe"}, float = true})
+hl.window_rule({ match = {class = "org.gnome.Loupe|org.gnome.Totem"}, float = true})
 
 all:is_enabled(true)
 OpaqueApps:is_enabled(true)
