@@ -10,4 +10,8 @@
     ./misc.nix
     ./windowrules.nix
   ];
+
+  wayland.windowManager.hyprland.extraConfig = ''
+  require("monitors")
+  '';
 }

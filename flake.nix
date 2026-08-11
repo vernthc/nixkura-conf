@@ -16,9 +16,6 @@
        inputs.nixpkgs.follows = "nixpkgs";
      };
 
-      # screenshot utility
-      HyprQuickFrame.url = "github:Ronin-CK/HyprQuickFrame";
-      HyprQuickFrame.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -26,7 +23,6 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/nixkura/configuration.nix
-        inputs.home-manager.nixosModules.default
       ];
     };
   };
