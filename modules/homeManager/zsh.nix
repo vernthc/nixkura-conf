@@ -22,7 +22,6 @@
       '';
 
   initContent = ''
-    eval "$(starship init zsh)"
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080"
 
     '';

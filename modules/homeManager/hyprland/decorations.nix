@@ -6,8 +6,8 @@ local colors = require("colors")
 
   hl.config({
   general = {
-    gaps_in = 5,
-    gaps_out = 15,
+    gaps_in     = 5,
+    gaps_out    = 15,
     border_size = 0,
 
     col = {
@@ -23,25 +23,25 @@ local colors = require("colors")
     inactive_opacity = 0.80,
     
   shadow = {
-    enabled = true,
-    range   = 5,
+    enabled      = true,
+    range        = 5,
     render_power = 1,
     sharp        = false,
     color        = "rgba(20, 20, 20, 0.8)",
 
   },
-blur = {
-    enabled  = true,
-    size     = 10,
-    passes   = 2,
-    contrast = 1.5,
+  blur = {
+    enabled        = true,
+    size           = 10,
+    passes         = 2,
+    contrast       = 1.5,
     ignore_opacity = true,
     brightness     = 0.95,
     xray           = false,
     noise          = 0,
     new_optimizations = true,
 
-    },
+      },
   }
-  })  '';
+})  '';
 }

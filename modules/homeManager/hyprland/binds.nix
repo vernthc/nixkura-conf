@@ -48,7 +48,9 @@
     hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
     -- screenshot
-    hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/Screenshots"))
+    # hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/Screenshots"))
+    hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("quickshell -c HyprQuickFrame -n"))
+
 
     -- scripts
     local function script(path)

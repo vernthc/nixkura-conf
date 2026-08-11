@@ -3,7 +3,6 @@
     environment.systemPackages = with pkgs; [
     wget
     neovim
-    kitty
     git
     nautilus
     rofi
@@ -14,7 +13,6 @@
     quickshell
     curl
     adw-gtk3
-    zsh
     equibop
     pavucontrol
     fastfetch
