@@ -4,7 +4,7 @@
     enable = true;
 
     shellAliases = {
-      rb = "sudo nixos-rebuild switch --flake ~/nixos";
+      rb = "sudo nixos-rebuild switch --flake ~/nixos#nixkura";
       cd = "z";
       cp = "cp -r";
       lsg = "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system";

@@ -25,7 +25,7 @@
     nixosConfigurations.nixkura = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./configuration.nix
+        ./hosts/nixkura/configuration.nix
         inputs.home-manager.nixosModules.default
       ];
     };

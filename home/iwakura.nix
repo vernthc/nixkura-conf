@@ -1,12 +1,8 @@
 { config, pkgs, ... }:
-
 {
 
   imports = [
-    ./modules/hyprland/default.nix
-    ./modules/kitty.nix
-    ./modules/zsh.nix
-    ./modules/gtk.nix
+  ../modules/homeManager/default.nix
   ];
 
   home.username = "iwakura";
@@ -20,14 +16,4 @@
     portalPackage = null;
   };
 
- home.packages = [
-  ];
-
- home.file = {
- };
-
- home.sessionVariables = {
-  };
-
-  programs.home-manager.enable = true;
 }
