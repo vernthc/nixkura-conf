@@ -4,7 +4,7 @@
     ./audio.nix
     ./boot.nix
     ./desktop.nix
-    ./gaming.nix
+    ./optimization.nix
     ./gc.nix
     ./networking.nix
     ./nvidia.nix
