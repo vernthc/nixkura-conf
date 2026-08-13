@@ -29,7 +29,7 @@ window_padding_width  30
 cursor_blink_interval 0.5
 cursor_trail 3
 
-background_opacity 0.80
+background_opacity 0.68
 scrollbar_handle_opacity 0
 scrollbar_track_opacity 0
 scrollbar_track_hover_opacity 0

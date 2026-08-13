@@ -3,8 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
     claude-desktop-flake.url = "github:poeck/claude-desktop-nix-flake";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    hyprland.url = "github:hyprwm/Hyprland?submodules=1";
 
     cachyos-nix = {
       url = "github:chaotic-cx/nyx";
@@ -17,18 +18,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+
+
+  outputs = { self, nixpkgs, zen-browser, hyprland, ... }@inputs: {
     nixosConfigurations.nixkura = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/nixkura/configuration.nix
-      ];
-    };
-
-    nixosConfigurations.nirikura = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./hosts/nirikura/configuration.nix
       ];
     };
   };

@@ -23,9 +23,10 @@
   # Use: gamescope -W 1920 -H 1080 -r 144 --backend wayland -- %command% u stupid 
   programs.gamescope.enable = true;
 
-  # ── opengl ─────────────────────────────────────────────────────────────────
-  hardware.opengl = {
+  # ── graphics ─────────────────────────────────────────────────────────────────
+  hardware.graphics = {
     enable          = true;
+    enable32Bit = true;
   };
 
   # ── Steam ─────────────────────────────────────────────────────────────────────

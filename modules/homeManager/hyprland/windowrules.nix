@@ -67,7 +67,7 @@ local all = hl.window_rule({
 })
 
 local OpaqueApps = hl.window_rule({
-  match  = {class = ("firefox|zen|brave|kitty")},
+  match  = {class = ("firefox|zen|zen-beta|brave|kitty")},
   opaque = true,
 })
 

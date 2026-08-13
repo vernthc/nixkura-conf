@@ -2,7 +2,7 @@
 let
   autostartCmds = [
     "awww-daemon"
-    "waybar"
+    # "waybar"
     "udiskie"
     "hypridle"
     "swayosd-server --top-margin 1"

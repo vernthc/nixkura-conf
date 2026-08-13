@@ -36,6 +36,7 @@
 
     # flake packages
     inputs.claude-desktop-flake.packages.${pkgs.system}.claude-desktop
+    inputs.zen-browser.packages.${pkgs.system}.default
    ];
 
   fonts.packages = with pkgs; [
