@@ -32,8 +32,8 @@ local colors = require("colors")
 
   blur = {
     enabled        = true,
-    size           = 15,
-    passes         = 2,
+    size           = 5,
+    passes         = 3,
     contrast       = 1.5,
     ignore_opacity = true,
     brightness     = 0.95,

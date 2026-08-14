@@ -11,5 +11,6 @@
     ./shell.nix
     ./users.nix
     ./homeManager.nix
+    ./inputs.nix
   ];
 }

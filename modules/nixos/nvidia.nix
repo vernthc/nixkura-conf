@@ -1,5 +1,13 @@
-{ config, pkgs, ... }:
-{
+{ config, lib, pkgs, ... }:
+
+let
+  cfg = config.modules.nixos.nvidia;
+in {
+  options.modules.nixos.nvidia = {
+    enable = lib.mkEnableOption "nvidia prime sync drivers";
+  };
+
+config = lib.mkIf cfg.enable {
   boot.blacklistedKernelModules = [ "nouveau" ];
   services.xserver.videoDrivers = [ "nvidia" ];
 
@@ -18,4 +26,5 @@
     intelBusId = "PCI:0:0:2";
     nvidiaBusId = "PCI:1:0:0";
   };
+ };
 }
