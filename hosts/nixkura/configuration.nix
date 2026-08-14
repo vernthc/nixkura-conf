@@ -8,6 +8,7 @@
   ];
 
   modules.nixos.nvidia.enable = true;
+  modules.nixos.inputs.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ]; # allow flakes
