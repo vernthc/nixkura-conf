@@ -3,7 +3,6 @@
     ./animations.nix
     ./autostart.nix
     ./binds.nix
-    ./decorations.nix
     ./env.nix
     ./input.nix
     ./layout.nix
@@ -13,5 +12,6 @@
 
   wayland.windowManager.hyprland.extraConfig = ''
   require("monitors")
+  require("decorations")
   '';
 }

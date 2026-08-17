@@ -48,8 +48,7 @@
     hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
     -- screenshot
-    -- hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/Screenshots"))
-    hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("quickshell"))
+    hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/Screenshots"))
 
 
     -- scripts
@@ -78,6 +77,7 @@
     hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("codium"))
 
     -- gamemode
-    hl.bind("SUPER + SHIFT + G", hl.dsp.exec_cmd("gamemode.sh"))
+    local decorations = require("~/.config/hypr/decorations")
+    hl.bind("SUPER + SHIFT + G", decorations.toggle)
   '';
 }

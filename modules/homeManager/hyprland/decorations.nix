@@ -40,7 +40,6 @@ local colors = require("colors")
     xray           = false,
     noise          = 0,
     new_optimizations = true,
-
   },
 }
 
